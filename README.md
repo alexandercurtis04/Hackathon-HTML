@@ -6,6 +6,7 @@
   How it Works:
 
   We used thre API modelx from ClarifAI - 
+  
   Facial Recognition: Scanned faces of all indivuals in airport and temporarily saved them to database
   Facial Expression Recognition: Scanned indiduals facial expressions to detect any odd behavior or aggrassion. If any is detected, it will flag the indivual and send a screenshot 
   of their face to TSA. Once TSA has been informed, they will then keep a close eye on the individual.
