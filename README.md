@@ -1,5 +1,4 @@
-<h1>SeenIXO<h1>
-<h2>
+<h1>SeenIXO<h1><h2>
   SeenIXO is an airport security AI model that detects suspicious behavior of individuals in an airports. This prompt was given to me and a team of software developers by 
   Sandia National Labratories for Prairie View A&M University's Ignite Hackathon. This was a 24 hour comepetion and my team and I worked tirelessly to create this project.
 <h2>
