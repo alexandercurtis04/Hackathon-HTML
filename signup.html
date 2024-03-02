@@ -7,11 +7,26 @@
     <style>
         .navbar2__btn {
             list-style-type: none;
-            font-family: Arial, sans-serif;
+            font-family: 'Kumbh Sans', sans-serif;
             margin: 0;
             padding: 0;
             text-align: 5;
             font-size: 1rem;
+        }
+        .getstarted{
+            background-color: black;
+            padding: 20px;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            background-size: 100%;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        .getstarted h2{
+            font-size: 3rem;
+        }
+
+        .getstarted h3{
+            margin-top: -35px;
         }
     </style>
 </head>
@@ -23,11 +38,14 @@
             <a href="/login.html" class="button">Sign In</a>
         </li>
     </h3>
+    <h4>
         <label for="username">Username:</label><br>
         <input type="text" id="username"><br>
         <label for="password">Password:</label><br>
         <input type="password" id="password"><br><br>
         <button onclick="login()">Make Account</button>
+    </h4>
+        
     </div>
 </body>
 </html>
