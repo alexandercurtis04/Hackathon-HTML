@@ -5,47 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <style>
-        .navbar2__btn {
-            list-style-type: none;
-            font-family: 'Kumbh Sans', sans-serif;
+        /* Resetting default margin and padding */
+        body, h2, h3, h4, p, ul {
             margin: 0;
             padding: 0;
-            text-align: 5;
-            font-size: 1rem;
         }
-        .getstarted{
-            background-color: black;
-            padding: 20px;
-            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-            background-size: 100%;
+
+        body {
             font-family: 'Kumbh Sans', sans-serif;
+            background-color: #f8f8f8; /* Light background color */
         }
 
-        .getstarted h2{
+        /* Container for the signup form */
+        .signup-container {
+            background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            color: white;
+            padding: 50px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Styling for the form elements */
+        .signup-form {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="password"],
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .signup-form button {
+            background-color: #007bff; 
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Styling for headings */
+        h2 {
             font-size: 3rem;
+            margin-bottom: 20px;
         }
 
-        .getstarted h3{
-            margin-top: -35px;
+        h3 {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="getstarted">
+    <div class="signup-container">
         <h2>Get started</h2>
-        <h3>
-            Already have an account? <li class="navbar2__btn">
-            <a href="/login.html" class="button">Sign In</a>
-        </li>
-    </h3>
-    <h4>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password"><br><br>
-        <button onclick="login()">Make Account</button>
-    </h4>
-        
+        <h3>Already have an account? <a href="/login.html" class="navbar2__btn">Sign In</a></h3>
+        <form class="signup-form" action="#">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password"><br><br>
+            <button type="submit" onclick="login()">Make Account</button>
+        </form>
     </div>
 </body>
 </html>
