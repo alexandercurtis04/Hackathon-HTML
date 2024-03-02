@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <style>
-        
+        .navbar2__btn {
+            list-style-type: none;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: 5;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="getstarted">
+        <h2>Get started</h2>
+        <h3>
+            Already have an account? <li class="navbar2__btn">
+            <a href="/login.html" class="button">Sign In</a>
+        </li>
+    </h3>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"><br><br>
+        <button onclick="login()">Make Account</button>
+    </div>
 </body>
 </html>
