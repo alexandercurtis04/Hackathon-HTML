@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <body>
+        <div class="homepage">
+            <a href="/index.html">
+                <button>Home</button>
+            </a>
+        </div>
+        
+    </body>
     <style>
         /* Add CSS styling here */
         body {
@@ -13,8 +21,10 @@
             padding: 0;
             text-align: center;
         }
+
         .container {
             background: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+            color: white;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -22,9 +32,14 @@
             align-items: center;
             text-align: center;
         }
+
+        .container h2{
+            font-size: 3rem;
+        }
         input[type="text"], input[type="password"] {
-            width: 200px;
+            width: 100%;
             padding: 10px;
+            font-size: 1rem;
             margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
@@ -45,7 +60,6 @@
         .signup {
             margin-top: 10px;
             margin-bottom: 10px;
-
         }
     </style>
 </head>
