@@ -7,18 +7,28 @@
     <style>
         /* Add CSS styling here */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Kumbh Sans', sans-serif;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
             text-align: center;
         }
         .container {
-            margin-top: 100px;
+            background: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         input[type="text"], input[type="password"] {
             width: 200px;
             padding: 10px;
             margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
         }
         button {
             padding: 10px 20px;
@@ -26,24 +36,35 @@
             color: #fff;
             border: none;
             cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .signup {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>Login Page</h2>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password"><br><br>
-        <button onclick="login()">Login</button>
-    </div>
-
-    <div class="signup">
+        <form id="loginForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="button" onclick="login()">Login</button>
+        </form>
         <a href="/signup.html">
             <button>Signup</button>
         </a>
     </div>
+
+    
     
 
     <script>
