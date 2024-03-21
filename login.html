@@ -4,29 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <body>
-        <div class="homepage">
-            <a href="/index.html">
-                <button>Home</button>
-            </a>
-        </div>
-        
-    </body>
     <style>
         /* Add CSS styling here */
+        body {
+            font-family: 'Kumbh Sans', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
         .homepage {
             outline-color: #fff;
             color: black;
             width: 100%;
             position: fixed;
             margin-bottom: 30px;
-        }
-
-        body {
-            font-family: 'Kumbh Sans', sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
             text-align: center;
         }
 
@@ -57,12 +50,13 @@
 
         button {
             padding: 10px 20px;
-            background-color: #007bff;
+            background-image: linear-gradient(to bottom, #ff8177 0%, #899dff 100%);
             color: #fff;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            align-items: center;
         }
 
         button:hover {
@@ -73,10 +67,17 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        
 
     </style>
 </head>
 <body>
+    <div class="homepage">
+        <a href="/index.html">
+            <button>Home</button>
+        </a>
+    </div>
+
     <div class="container">
         <h2>Login Page</h2>
         <form id="loginForm">
@@ -86,13 +87,10 @@
             <input type="password" id="password" name="password"><br><br>
             <button type="button" onclick="login()">Login</button>
         </form>
-        <a href="/signup.html">
+        <a href="/signup.html" class="signup">
             <button>Signup</button>
         </a>
     </div>
-
-    
-    
 
     <script>
         // JavaScript code for login functionality
